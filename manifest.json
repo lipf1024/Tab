@@ -1,0 +1,23 @@
+{
+
+    "name": "主页",
+  
+    "description": "主页",
+  
+    "version": "1.0",
+  
+    "manifest_version": 2,
+  
+    "incognito": "split",
+
+    "web_accessible_resources": ["javascript/main.js","javascript/donghua.js","javascript/jquery-3.3.1.min.js"],
+    
+    "chrome_url_overrides": {
+      "newtab": "blank.html"
+    },
+    "content_security_policy": "script-src 'self' 'unsafe-eval' https://sp0.baidu.com/; object-src 'self'",
+    "permissions": [
+      "storage"
+    ]
+   
+  }
